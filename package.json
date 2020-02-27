@@ -2,13 +2,18 @@
   "name": "parcel_starter",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "GNUv3",
   "scripts": {
-  	"start": "parcel -p 4000 watch src/index.html",
-	"build": "parcel build src/index.html"
-
+    "start": "npm run build && npm run server",
+    "server": "node server.js",
+    "develop": "parcel -p 4000 watch src/index.html",
+    "build": "rm -rf dist && parcel build src/index.html"
   },
-    "devDependencies": {
+  "devDependencies": {
     "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^19.1.1",
+    "@hapi/inert": "^6.0.1"
   }
 }
