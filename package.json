@@ -7,5 +7,8 @@
   	"start": "parcel -p 4000 watch src/index.html",
 	"build": "parcel build src/index.html"
 
+  },
+    "devDependencies": {
+    "parcel-bundler": "^1.12.4"
   }
 }
